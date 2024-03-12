@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#construction {
+    background-color: #f0c0d2;
+    color: #205738;
+}
+
+section {
+    padding: 60px 0;
+    font-family: "Gill Sans", sans-serif;
+    height: 100%;
+}
