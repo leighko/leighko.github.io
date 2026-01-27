@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Leigh Kovar</title>
   </head>
+
+  <p id="thankYou" style="display:none;">Thanks! I’ll be in touch.</p>
+  
+  <script>
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    const form = event.target;
+
+    // Send the form to FormSubmit
+    form.submit();
+
+    // Reset AFTER submission is triggered
+    setTimeout(() => {
+      form.reset();
+    }, 500);
+  }
+  </script>
+
   <body>
 
     <!-- navbar -->
@@ -186,7 +205,7 @@
 
           <div class="row justify-content-center my-1">
               <div class="col-lg-6">
-                  <form target="_blank" action="https://formsubmit.co/f527c8b733325e170802e3570b800ec7" method="POST">
+                  <form target="_blank" action="https://formsubmit.co/f527c8b733325e170802e3570b800ec7" method="POST" onsubmit="handleSubmit(event)">
                     <input type="hidden" name="_captcha" value="false">
                       <label for="email" class="form-label">Email address:</label>
                       <div class="mb-4 input-group">
