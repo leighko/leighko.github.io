@@ -11,6 +11,7 @@ function submitForm(event) {
     console.log("Form submitted!");
     document.getElementById('message').innerText = "Form submitted successfully!";
 
+    form.submit();
     // Clear the form fields
     document.getElementById("myForm").reset();
 }
